@@ -4,7 +4,7 @@ config_file=${base_dir}/.pylintrc
 cd ${base_dir}
 
 
-pytest --cov=. --covconfig=../.coveragerc
+pytest --cov=. --cov-config=../.coveragerc
 
 
 TEST_EXIT=$?
