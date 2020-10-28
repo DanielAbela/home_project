@@ -6,7 +6,11 @@ The following instructions assume that you've got Python 3 installed and that yo
 ###Install the dependencies
 
 pip install -r fiona_requirements.txt
+
+
 pip install -r local_requirements.txt --no-index --find-links wheels
+
+
 pip install -r requirements.txt 
 
 ###Running the script
