@@ -24,7 +24,6 @@ python main.py
 
 cd home_project
 
-
 pytest --cov=. --cov-config=../.coveragerc
 
 Sources for spatial join:
