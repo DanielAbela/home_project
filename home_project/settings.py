@@ -1,5 +1,6 @@
 from pathlib import Path
 
+FILENAMES = ["address_list.csv", "postcode_reference.csv"]
 WORKING_DIRECTORY = Path(__file__).parent
 DATA_DIRECTORY = WORKING_DIRECTORY / "data"
 DEFAULT_ROUND_VALUE = 3
