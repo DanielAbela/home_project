@@ -29,8 +29,6 @@ def main():
     geo_postcodes = gpd.GeoDataFrame(post_codes, geometry=gpd.points_from_xy(post_codes.Longitude, post_codes.Latitude))
     joined_data = gpd.sjoin(geo_addresses, geo_postcodes, op='intersects')
     joined_data['validated'] = joined_data.apply(lambda row: validate_data(row), axis=1)
-    print(joined_data)
-    print(len(joined_data))
     pd.DataFrame(joined_data.drop(columns='geometry')).to_csv('address_list.tsv', sep='|')
 
 
