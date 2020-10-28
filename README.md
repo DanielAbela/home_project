@@ -20,6 +20,13 @@ cd home_project
 python main.py
 
 
+###Running tests
+
+cd home_project
+
+
+pytest --cov=. --cov-config=../.coveragerc
+
 Sources for spatial join:
 https://geopandas.org/mergingdata.html
 https://towardsdatascience.com/how-to-easily-join-data-by-location-in-python-spatial-join-197490ff3544
