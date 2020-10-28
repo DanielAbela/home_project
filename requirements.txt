@@ -1,6 +1,1 @@
-munch
-click
-cligj
-attrs
-click-plugins
 geopandas
