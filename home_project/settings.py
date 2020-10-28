@@ -1,7 +1,7 @@
 from pathlib import Path
 
 WORKING_DIRECTORY = Path(__file__).parent
-DATA_DIRECTORY = WORKING_DIRECTORY / 'data'
+DATA_DIRECTORY = WORKING_DIRECTORY / "data"
 DEFAULT_ROUND_VALUE = 3
 
 # The following is a list of the number of rows returned based on changing the default round value:

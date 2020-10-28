@@ -1,7 +1,7 @@
 from settings import DEFAULT_ROUND_VALUE
 
 
-def read_file(filename, mode='r'):
+def read_file(filename, mode="r"):
     with open(filename, mode) as file:
         return file.read()
 
