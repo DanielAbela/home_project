@@ -1,4 +1,4 @@
-from settings import DEFAULT_ROUND_VALUE
+from .settings import DEFAULT_ROUND_VALUE
 
 
 def read_file(filename, mode="r"):
@@ -14,6 +14,5 @@ def check_if_float(string):
         return False
 
 
-# I added this function because the Latitude and Longitude values are not an exact match
 def round_data(df, round_value=DEFAULT_ROUND_VALUE):
     return df.round(round_value)

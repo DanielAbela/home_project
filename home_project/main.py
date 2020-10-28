@@ -1,8 +1,8 @@
 import geopandas as gpd
 import pandas as pd
 
-from settings import DATA_DIRECTORY, FILENAMES
-from utils import check_if_float, round_data
+from .settings import DATA_DIRECTORY, FILENAMES
+from .utils import check_if_float, round_data
 
 
 def get_data(filename, directory=DATA_DIRECTORY):
@@ -11,7 +11,7 @@ def get_data(filename, directory=DATA_DIRECTORY):
 
 def clean_up_data(df):
     df = df.rename(columns={"lat": "Latitude", "long": "Longitude"})
-    return round_data(
+    return round_data(  # Round up Latitude and Longitude values as they are not an exact match
         df[
             df["Latitude"].apply(
                 check_if_float
